@@ -266,13 +266,13 @@ function deleteTransaction() {
             </form>
 
             <template #footer>
-                <button @click="showModal = false" class="px-4 py-2 text-sm font-medium text-surface-300 bg-surface-700 hover:bg-surface-600 rounded-lg transition-colors">
+                <button @click="showModal = false" class="w-full sm:w-auto px-4 py-2 text-sm font-medium text-surface-300 bg-surface-700 hover:bg-surface-600 rounded-lg transition-colors">
                     Cancel
                 </button>
                 <button
                     @click="submit"
                     :disabled="form.processing"
-                    class="px-4 py-2 text-sm font-medium text-white bg-primary-600 hover:bg-primary-500 rounded-lg transition-colors disabled:opacity-50"
+                    class="w-full sm:w-auto px-4 py-2 text-sm font-medium text-white bg-primary-600 hover:bg-primary-500 rounded-lg transition-colors disabled:opacity-50"
                 >
                     {{ editingTransaction ? 'Update' : 'Create' }}
                 </button>
